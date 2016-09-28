@@ -10,34 +10,33 @@ BLUE=$(tput setaf 6 && tput bold)
                                         
 cat << EOF
  
-		▒█▀▀█ ▒█░▒█ ▒█▀▀▀█ ▒█▀▀▀█ ▀▀█▀▀ 
-		▒█░▄▄ ▒█▀▀█ ▒█░░▒█ ░▀▀▀▄▄ ░▒█░░ 
-		▒█▄▄█ ▒█░▒█ ▒█▄▄▄█ ▒█▄▄▄█ ░▒█░░ 
+                TURKSIBERGUVENLIK.NET
+		   [BİRKAN TEKKAN]
 
 EOF
 
 echo "       Choose one of the following options";
 echo ""
-echo "       1.  Ping a target";
-echo "       2.  Launch a whois search";
-echo "       3.  Recover subdomains with dnsmap";
-echo "       4.  See the path between you and your target with traceroute";
-echo "       5.  Retrieve information about a dns";
-echo "       6.  Find the administration page of websites";
-echo "       7.  Identify different domain and different emails";
-echo "       8.  Identify different versions of web programs";
-echo "       9.  Launch a scan with NMAP";
-echo "       10. Joomla & Wordpress Detector";
-echo "       11. Ultimate Footprinting";
+echo "       1.  Ping At";
+echo "       2.  Whois Sorgusu";
+echo "       3.  Alt Domain ve DNS Bilgisi";
+echo "       4.  Siteye Giden Yol Tespiti";
+echo "       5.  DNS'ler Hakkında Bilgi";
+echo "       6.  Admin Panel Bul";
+echo "       7.  Alt Domain ve Email Tespiti";
+echo "       8.  Web Program Version Bilgisi";
+echo "       9.  NMAP Taraması";
+echo "       10. Joomla & Wordpress Taraması";
+echo "       11. Gelişmiş Analiz";
 echo "       12. Wifite";
-echo "       13. Exit script";
+echo "       13. Çıkış";
 echo ""
 echo ""
 read -p " Please type your choice number : " menuoption
 echo ""
 
 if [ $menuoption = "1" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 ping -c 4 $target
 echo ""
@@ -47,7 +46,7 @@ cd /opt
 else
 
 if [ $menuoption = "2" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 whois $target
 echo ""
@@ -57,7 +56,7 @@ cd /opt
 else
 
 if [ $menuoption = "3" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 cd /root
 dnsmap $target
@@ -68,7 +67,7 @@ cd /opt
 else
 
 if [ $menuoption = "4" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 echo $STAND"Please type the name of your network interface Example: eth0 "
 read IFACE;
@@ -82,7 +81,7 @@ cd /opt
 else
 
 if [ $menuoption = "5" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 cd /opt
 fierce -dns $target
@@ -102,7 +101,7 @@ cd /opt
 else
 
 if [ $menuoption = "7" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 cd /root
 theharvester -d $target -l 500 -b google
@@ -113,7 +112,7 @@ cd /opt
 else
 
 if [ $menuoption = "8" ]; then
-read -p " Enter your target {google.com} : " target
+read -p " Enter your target {turksiberguvenlik.net} : " target
 echo ""
 whatweb -v $target
 echo ""
