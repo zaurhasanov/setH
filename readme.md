@@ -1,6 +1,6 @@
 Ekran Görüntüsü
 =
-![](http://i.imgur.com/bbr48Ep.png)
+http://i.hizliresim.com/Wb8oWY.png
 
 Kurulum
 =
