@@ -1,7 +1,7 @@
 Ekran Görüntüsü
 =
 
-Kurulum ve Kullanımı
+Kurulum
 =
 - git clone https://github.com/turksiberguvenlik/ghost.git
 - cp -r ghost/tools/ /opt/
