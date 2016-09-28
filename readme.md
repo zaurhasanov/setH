@@ -1,6 +1,7 @@
 Ekran Görüntüsü
 =
 
+
 Kurulum
 =
 - git clone https://github.com/turksiberguvenlik/ghost.git
