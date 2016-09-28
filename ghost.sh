@@ -15,7 +15,7 @@ cat << EOF
 
 EOF
 
-echo "       Yapmak İstediğiniz İşlem Numarası";
+echo "       İşlem Numaraları";
 echo ""
 echo "       1.  Ping At";
 echo "       2.  Whois Sorgusu";
@@ -32,7 +32,7 @@ echo "       12. Wifite";
 echo "       13. Çıkış";
 echo ""
 echo ""
-read -p " Lütfen Menü İşlem Girin : " menuoption
+read -p " Lütfen İşlem Numarasını Girin : " menuoption
 echo ""
 
 if [ $menuoption = "1" ]; then
